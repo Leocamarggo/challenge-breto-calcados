@@ -1,0 +1,147 @@
+.headerMobile {
+  display: none;
+}
+
+.headerDesktop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.headerDesktop ul {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  list-style: none;
+  overflow: hidden;
+  align-items: center;
+  padding: 0;
+}
+.headerDesktop ul li {
+  padding: 25px;
+}
+.headerDesktop ul li a {
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 1px;
+  font-size: 1.2vw;
+}
+.headerDesktop .part01Menu {
+  padding-left: 50px;
+}
+.headerDesktop .part03Menu {
+  padding-right: 50px;
+}
+
+.headerMobile {
+  width: 100%;
+  z-index: 3;
+}
+.headerMobile ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.headerMobile li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 1px;
+  font-size: 2vw;
+  font-weight: 500;
+}
+.headerMobile .logo {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.headerMobile .part03Menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.headerMobile .part02Menu {
+  display: flex;
+  justify-content: center;
+  border-top: 0.1px inset;
+}
+.headerMobile .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 43px 20px;
+  position: relative;
+  user-select: none;
+}
+.headerMobile .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 3px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 28px;
+}
+.headerMobile .menu-icon .navicon:before {
+  top: 5px;
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.headerMobile .menu-icon .navicon:after {
+  top: -5px;
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.headerMobile .menu-btn {
+  display: none;
+}
+.headerMobile .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+.headerMobile .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.headerMobile .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.headerMobile .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.headerMobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+  top: 0;
+}
+.headerMobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (max-width: 1199px) {
+  .headerDesktop {
+    display: none;
+  }
+
+  .headerMobile {
+    display: block;
+  }
+}
+@media (max-width: 799px) {
+  .headerMobile li a {
+    font-size: 3vw;
+    font-weight: 500;
+  }
+}
+@media (max-width: 600px) {
+  .headerMobile li a {
+    font-size: 3.2vw;
+    font-weight: 700;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
