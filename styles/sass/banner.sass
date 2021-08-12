@@ -1,0 +1,88 @@
+.carousel
+    .carousel-indicators
+        li
+            width: 18px
+            height: 18px
+            border-radius: 100%
+    .carousel-inner
+        .carousel-item
+            #bannerMob
+                display: none
+            .carousel-caption
+                transform: translateY(-50%)
+                bottom: initial
+                top: 50%
+
+                .titleBannerSapato
+                    font-size: 5.5vw
+                    letter-spacing: 20px
+
+                .descBanner
+                    font-size: 1vw
+                    letter-spacing: 3px
+                    font-weight: 500
+
+                .buttonBanner
+                    padding: 20px 30px
+                    background-color: #fff
+                    border: none
+                    color: black
+                    font-weight: 700
+                    text-align: center
+                    text-decoration: none
+                    display: inline-block
+                    font-size: 0.8vw
+                    cursor: pointer
+                    border-radius: 50px
+
+@media (max-width: 1199px)
+    .carousel
+        .carousel-indicators
+            li
+                width: 10px
+                height: 10px
+                border-radius: 100%
+        .carousel-inner
+            .carousel-item
+                #bannerMob
+                    display: none
+                .carousel-caption
+                    .titleBannerSapato
+                        font-size: 7.5vw
+
+                    .descBanner
+                        font-size: 2vw
+
+                    .buttonBanner
+                        font-size: 1.5vw
+                        padding: 20px 30px
+
+
+
+@media (max-width: 600px)
+    .carousel
+        .carousel-indicators
+            li
+                width: 8px
+                height: 8px
+                border-radius: 100%
+        .carousel-inner
+            .carousel-item
+                #bannerDesk
+                    display: none
+                #bannerMob
+                    display: block
+                    height: 100%
+                .carousel-caption
+
+                    .titleBannerSapato
+                        font-size: 11vw
+                        letter-spacing: 15px
+
+                    .descBanner
+                        font-size: 2.5vw
+                        letter-spacing: 1px
+
+                    .buttonBanner
+                        font-size: 2.5vw
+                        padding: 10px 20px

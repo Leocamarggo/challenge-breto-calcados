@@ -1,7 +1,3 @@
-.headerMobile {
-  display: none;
-}
-
 .headerDesktop {
   width: 100%;
   display: flex;
@@ -23,7 +19,7 @@
   text-decoration: none;
   color: #333;
   letter-spacing: 1px;
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 .headerDesktop .part01Menu {
   padding-left: 50px;
@@ -35,6 +31,7 @@
 .headerMobile {
   width: 100%;
   z-index: 3;
+  display: none;
 }
 .headerMobile ul {
   margin: 0;
@@ -68,7 +65,7 @@
 .headerMobile .menu-icon {
   cursor: pointer;
   float: right;
-  padding: 43px 20px;
+  padding: 38px 20px;
   position: relative;
   user-select: none;
 }
