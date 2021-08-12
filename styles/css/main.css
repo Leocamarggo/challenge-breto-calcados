@@ -227,5 +227,85 @@ body {
     font-weight: 700;
   }
 }
+.productsMobile {
+  display: none;
+}
+
+.productsDesktop .container-fluid .card {
+  border: none;
+}
+.productsDesktop .container-fluid .card .img-thumbnail {
+  border: none;
+  width: 60%;
+}
+.productsDesktop .container-fluid .card .card-body .dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.productsDesktop .container-fluid .card .card-body .dot1 {
+  margin-left: 0px;
+  background-color: black;
+}
+.productsDesktop .container-fluid .card .card-body .dot2 {
+  background-color: #a06949;
+}
+.productsDesktop .container-fluid .card .card-body .dot3 {
+  background-color: #776058;
+}
+
+@media (max-width: 1199px) {
+  .productsDesktop .container-fluid .card .img-thumbnail {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .productsDesktop {
+    display: none;
+  }
+
+  .productsMobile {
+    display: block;
+  }
+  .productsMobile .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+  .productsMobile .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+  .productsMobile .carousel-inner .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+  .productsMobile .carousel-inner .container-fluid .card {
+    border: none;
+  }
+  .productsMobile .carousel-inner .container-fluid .card .img-thumbnail {
+    border: none;
+    width: 60%;
+    display: flex;
+  }
+  .productsMobile .carousel-inner .container-fluid .card .card-body .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .productsMobile .carousel-inner .container-fluid .card .card-body .dot1 {
+    margin-left: 0px;
+    background-color: black;
+  }
+  .productsMobile .carousel-inner .container-fluid .card .card-body .dot2 {
+    background-color: #a06949;
+  }
+  .productsMobile .carousel-inner .container-fluid .card .card-body .dot3 {
+    background-color: #776058;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
