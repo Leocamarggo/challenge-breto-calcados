@@ -251,7 +251,7 @@ body .row {
 }
 .productsDesktop .container-fluid .card .card-body .dot1 {
   margin-left: 0px;
-  background-color: black;
+  background: radial-gradient(circle closest-side, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, #fff 80%, #fff 89%, #000000 10%, #000000 99%, #fff 100%), black center/160px 160px;
 }
 .productsDesktop .container-fluid .card .card-body .dot2 {
   background-color: #a06949;
@@ -302,7 +302,7 @@ body .row {
   }
   .productsMobile .carousel-inner .container-fluid .card .card-body .dot1 {
     margin-left: 0px;
-    background-color: black;
+    background: radial-gradient(circle closest-side, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, #fff 80%, #fff 89%, #000000 10%, #000000 99%, #fff 100%), black center/160px 160px;
   }
   .productsMobile .carousel-inner .container-fluid .card .card-body .dot2 {
     background-color: #a06949;
