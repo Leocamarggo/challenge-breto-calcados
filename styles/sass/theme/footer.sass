@@ -1,0 +1,75 @@
+.footer
+    height: 100%
+    background-color: #282828
+    color: white
+
+    .insideFooter
+        .row
+            margin: 0
+            padding-top: 5vh
+
+            a
+                color: #707070
+                font-size: 16px
+
+            .menu
+                .divCopy
+                    margin-top: 30vh
+                    color: #707070
+                    font-size: 16px
+                    margin-bottom: 5vh
+                .list-unstyled
+                    .itemMenu
+                        margin-bottom: -2px
+
+            .col-md-3
+                .news
+                    display: flex
+                    flex-direction: column
+                    padding-top: 0
+                .divRedes
+                    margin-top: 7vh
+
+                    i
+                        margin-right: 23px
+                input
+                    color: #f0f0f0
+                    background-color: #414141
+                    padding: 6%
+                    margin-bottom: 15px
+                    width: 70%
+                    border-radius: 10px 0 0 10px
+                    border: none
+                    font-size: 16px
+
+                    &::placeholder
+                        color: #f0f0f0
+                
+                button
+                    color: #171b1a
+                    background-color: #d6dad9
+                    padding: 5%
+                    margin-bottom: 15px
+                    width: 30%
+                    border-radius: 0 100px 100px 0
+                    border: none
+                    font-weight: 700
+                
+
+@media (max-width: 770px)
+    .footer
+        .insideFooter
+            .row
+                .menu
+                    display: none
+                .col-md-3
+                    .news
+                        align-items: center
+                    .divInput
+                        width: 100%
+                        margin: 0 auto
+                    .divRedes
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        margin-bottom: 5vh
