@@ -13,12 +13,12 @@
     <!-- Styles terceiros -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Header -->
 
-    <div class="headerDesktop">
+    <div class="headerDesktop" data-aos="fade-right" data-aos-duration="2000">
         <ul class="part01Menu">
             <li>
                 <a href="#">MASCULINO</a>
@@ -52,7 +52,7 @@
         </ul>
     </div>
 
-    <div class="headerMobile">
+    <div class="headerMobile" data-aos="fade-right" data-aos-duration="2000">
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
@@ -91,7 +91,7 @@
 
     <!-- Banner -->
 
-    <div id="bannerImage" class="carousel slide" data-ride="carousel" data-touch="true">
+    <div id="bannerImage" class="carousel slide"  data-aos="fade-left" data-aos-duration="1000" data-ride="carousel" data-touch="true">
         <ol class="carousel-indicators">
           <li data-target="#bannerImage" data-slide-to="0" class="active"></li>
           <li data-target="#bannerImage" data-slide-to="1"></li>
@@ -144,7 +144,7 @@
       </div>
     <!-- Products -->
 
-    <div class="productsDesktop">
+    <div class="productsDesktop"  data-aos="zoom-in-up" data-aos-duration="2000">
         <div class="row pt-5" style="justify-content: center; align-items: center;">
             <span  style="font-weight: 900; letter-spacing: 1px;">COLLECTION</span>
         </div>
@@ -217,7 +217,7 @@
         </div>
     </div>
     
-    <div id="carouselProductsMobile" class="productsMobile carousel slide" data-ride="carousel" data-touch="true">
+    <div id="carouselProductsMobile" class="productsMobile carousel slide" data-ride="carousel" data-touch="true" data-aos="zoom-in-up" data-aos-duration="2000">
         <div class="row pt-5" style="justify-content: center; align-items: center;">
             <span  style="font-weight: 900; letter-spacing: 1px;">COLLECTION</span>
         </div>
@@ -301,7 +301,7 @@
     <div class="form">
         <div class="containerForm">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5" data-aos="fade-up" data-aos-duration="1000" >
                     <div class="col textFale">
                         <span>FALE CONOSCO</span>
                     </div>
@@ -311,21 +311,19 @@
                         </h5>
                     </div>
                 </div>
-                <div class="inputsForm col-md-5">
+                <div class="inputsForm col-md-5" data-aos="fade-down" data-aos-duration="1000"  >
                     <div class="divInput">
-                        <form id="contactform" method="post">
-                            <input type="text" name="nome" class="form-control" placeholder="Nome">
-                            <input type="text" name="email" class="form-control" placeholder="E-mail">
-                            <input type="text" name="telefone" data-mask="(00) 00000-0000" id="telefone" class="form-control" placeholder="Telefone">
-                            <select type="text" class="form-select" placeholder="Departamento">
-                                <option value="" disabled selected>Departamento</option>
-                                <option value="vendas">Vendas</option>
-                            </select>
-                            <input type="text" name="mensagem" class="form-control inputMensagem" placeholder="Mensagem">
-                        </form>
+                        <input type="text" name="nome" class="form-control" placeholder="Nome">
+                        <input type="text" name="email" class="form-control" placeholder="E-mail">
+                        <input type="text" name="telefone" data-mask="(00) 00000-0000" id="telefone" class="form-control" placeholder="Telefone">
+                        <select type="text" class="form-select" placeholder="Departamento">
+                            <option value="" disabled selected>Departamento</option>
+                            <option value="vendas">Vendas</option>
+                        </select>
+                        <input type="text" name="mensagem" class="form-control inputMensagem" placeholder="Mensagem">
                     </div>
                     <div class="divSubmit">
-                        <button id="teste" class="submit">&gt;</button>
+                        <button id="btnSubmit" class="submit">&gt;</button>
                     </div>
                 </div>
             </div>
@@ -337,7 +335,7 @@
     <div class="footer">
         <div class="insideFooter">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-2 menu">
+                <div class="col-md-2 menu" data-aos="fade-right">
                     <ul class="list-unstyled">
                         <li class="itemMenu">
                             <a href="#!">Marca</a>
@@ -359,7 +357,7 @@
                         <span style="white-space: nowrap;">&copy;2021-CNPJ:15.265.365/0001-95 - Breto Calçados - ME</span>
                     </div>
                 </div>
-                <div class="col-md-6 menu">
+                <div class="col-md-6 menu" data-aos="fade-right">
                     <ul class="list-unstyled">
                         <li class="itemMenu">
                             <a href="#!">Política de Troca</a>
@@ -372,7 +370,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1000">
                     <div class="row news">
                         <h5>NEWSLETTER</h5>
                         <P style="margin-bottom: -3px;">Receba ofertas e novidades preparadas</P>
@@ -399,6 +397,11 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script type="text/javascript">
         var selectedDepartament;
 
@@ -408,7 +411,7 @@
             });
         });
 
-        $('#teste').click(function(e) {
+        $('#btnSubmit').click(function(e) {
             e.preventDefault();
             const nome = $('input[name="nome"]').val();
             const email = $('input[name="email"]').val();
