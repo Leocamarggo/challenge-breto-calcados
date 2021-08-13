@@ -307,5 +307,142 @@ body {
     background-color: #776058;
   }
 }
+.form {
+  height: 100%;
+  background-color: black;
+}
+.form .containerForm {
+  padding-top: 5vh;
+}
+.form .containerForm .row {
+  justify-content: space-around;
+  margin: 0;
+}
+.form .containerForm .row .inputsForm .inputMensagem {
+  padding-bottom: 130px;
+}
+.form .containerForm .row .inputsForm .divSubmit {
+  display: flex;
+  justify-content: flex-end;
+}
+.form .containerForm .row .inputsForm .divSubmit .submit {
+  background-color: white;
+  color: black;
+  font-size: 40px;
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align: center;
+  border: none;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.form .containerForm .row input {
+  color: white;
+  background-color: black;
+  padding: 4%;
+  margin-bottom: 15px;
+  max-width: 100%;
+  border-radius: 0;
+  border: 1px solid #111;
+}
+.form .containerForm .row input::placeholder {
+  color: white;
+}
+.form .containerForm .row select {
+  color: white;
+  background-color: black;
+  padding: 4%;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 0;
+  border: 1px solid #111;
+}
+.form .containerForm .row select::placeholder {
+  color: white;
+}
+.form .containerForm .row .col-md-5 .col span {
+  color: white;
+  font-size: 1vw;
+  letter-spacing: 2px;
+}
+.form .containerForm .row .col-md-5 .col h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 3.5vw;
+  font-weight: 100;
+}
+.form .containerForm .row .col-md-5 .textFale {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .form .containerForm .row .inputsForm input {
+    width: 100%;
+    padding: 6%;
+    padding-right: 15%;
+  }
+  .form .containerForm .row .inputsForm select {
+    width: 100%;
+    padding: 6%;
+    padding-right: 15%;
+  }
+  .form .containerForm .row .col-md-5 {
+    margin-bottom: 30px;
+  }
+  .form .containerForm .row .col-md-5 .col span {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 769px) {
+  .form .containerForm .row {
+    justify-content: center;
+    margin: 0;
+  }
+  .form .containerForm .row .inputsForm .inputMensagem {
+    padding-bottom: 35%;
+  }
+  .form .containerForm .row .inputsForm .divInput {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .form .containerForm .row .inputsForm .divSubmit {
+    display: flex;
+    justify-content: center;
+  }
+  .form .containerForm .row .inputsForm .divSubmit .submit {
+    font-size: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 50px;
+  }
+  .form .containerForm .row input {
+    max-width: 90%;
+  }
+  .form .containerForm .row input::placeholder {
+    text-align: center;
+  }
+  .form .containerForm .row select {
+    width: 90%;
+    text-align-last: center;
+  }
+  .form .containerForm .row .col-md-5 {
+    margin-bottom: 30px;
+  }
+  .form .containerForm .row .col-md-5 .col {
+    text-align: center;
+  }
+  .form .containerForm .row .col-md-5 .col span {
+    font-size: 2.5vw;
+  }
+  .form .containerForm .row .col-md-5 .col h5 {
+    font-size: 5.5vw;
+  }
+  .form .containerForm .row .col-md-5 .textFale {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

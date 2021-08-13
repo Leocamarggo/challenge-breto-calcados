@@ -1,0 +1,131 @@
+$mobile: 769px
+$desktop: 1199px
+    
+.form
+    height: 100%
+    background-color: black
+
+    .containerForm
+        padding-top:5vh
+        .row
+            justify-content: space-around
+            margin: 0
+            .inputsForm
+                .inputMensagem
+                    padding-bottom: 130px
+                .divSubmit
+                    display: flex
+                    justify-content: flex-end
+                    .submit
+                        background-color: white
+                        color: black
+                        font-size: 40px
+                        padding-left: 4%
+                        padding-right: 4%
+                        text-align: center
+                        border: none
+                        font-weight: 500
+                        margin-bottom: 50px
+            input
+                color: white
+                background-color: black
+                padding: 4%
+                margin-bottom: 15px
+                max-width: 100%
+                border-radius: 0
+                border: 1px solid #111
+
+                &::placeholder
+                    color: white
+
+            select
+                color: white
+                background-color: black
+                padding: 4%
+                margin-bottom: 15px
+                width: 100%
+                border-radius: 0
+                border: 1px solid #111
+
+                &::placeholder
+                    color: white
+            
+            .col-md-5
+                .col
+                    span
+                        color: white
+                        font-size: 1vw
+                        letter-spacing: 2px
+                    h5
+                        color: white
+                        letter-spacing: 2px
+                        font-size: 3.5vw
+                        font-weight: 100
+
+                .textFale
+                    margin-bottom: 50px
+
+@media (min-width: $mobile) and (max-width: $desktop)
+    .form 
+        .containerForm
+            .row
+                .inputsForm
+                    input                              
+                        width: 100%
+                        padding: 6%
+                        padding-right: 15%
+                    select
+                        width: 100%
+                        padding: 6%
+                        padding-right: 15%
+
+                .col-md-5
+                    margin-bottom: 30px
+                    .col
+                        span
+                            font-size: 2vw
+
+@media (max-width: $mobile)
+    .form
+        .containerForm
+            .row
+                justify-content: center
+                margin: 0
+                .inputsForm
+                    .inputMensagem
+                        padding-bottom: 35%
+                    .divInput
+                        display: flex
+                        justify-content: center
+                        flex-direction: row
+                        flex-wrap: wrap
+                    .divSubmit
+                        display: flex
+                        justify-content: center
+                        .submit
+                            font-size: 30px
+                            padding-left: 6%
+                            padding-right: 6%
+                            margin-bottom: 50px
+                input                              
+                    max-width: 90%
+                    
+                    &::placeholder
+                        text-align: center
+                select
+                    width: 90%
+                    text-align-last: center
+
+                
+                .col-md-5
+                    margin-bottom: 30px
+                    .col
+                        text-align: center
+                        span
+                            font-size: 2.5vw
+                        h5
+                            font-size: 5.5vw
+
+                    .textFale
+                        margin-bottom: 15px
+                        text-align: center
