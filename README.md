@@ -5,4 +5,4 @@
 ## English version:
 ### Objective:
 
-* Faithfully reproduce provided structure in functional Frontend using HTML5, CSS3 with SASS as base and Javascript.
+* Set up a page for the customer to check the data added to the cart and enter the desired zip code to receive the product. The colors and designer are at the applicant's choice
