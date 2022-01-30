@@ -7,6 +7,6 @@
 ## English version:
 ### Objective:
 
-* Faithfully reproduce provided structure in functional Frontend using HTML5, CSS3 with SASS as base and Javascript. In this project i used: HTML, CSS/SASS e jQuery.
+* Faithfully reproduce provided structure in functional Frontend using HTML5, CSS3 with SASS as base and Javascript. In this project i used: HTML, CSS/SASS and jQuery.
 
 #### Ps: If you want to test the application just click on the link on the right.
